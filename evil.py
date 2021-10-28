@@ -16,7 +16,6 @@
 import os, sys, time, socket, json
 from os import popen, system
 from time import sleep
-from settings import *
 
 
 # Normal
