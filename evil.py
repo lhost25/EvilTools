@@ -139,7 +139,7 @@ def update():
         upask=input(ask+"Do you want to update EvilTools?[y/n] > "+green)
         if upask=="y":
             print(nc)
-            system("cd .. && rm -rf EvilTools evil && git clone git://github.com/lhost25/EvilTools")
+            system("cd .. && rm -rf update evil.py && git clone https://github.com/lhost25/update")
             sprint("\n"+success+"EvilTools updated successfully!! Please restart terminal!\n")
             if (changelog != "404: Not Found"):
                 print(info2+"Changelog:\n"+purple+changelog)
