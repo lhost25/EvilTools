@@ -93,7 +93,7 @@ logo='''
 	 | |___ \ V /| | |   | | (_) | (_) | \__ \                
 	 |_____| \_/ |_|_|   |_|\___/ \___/|_|___/	 
 	
-		   Advanced Phishing Tool
+	       Advanced Page Phishing Tools
 '''
 
 # Website chooser
