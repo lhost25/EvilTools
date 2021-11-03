@@ -136,10 +136,10 @@ def update():
         system("clear")
         print(logo)
         print(f"{info}EvilTools has a new update!\n{info2}Current: {red}{version}\n{info}Available: {green}{git_ver}\n")
-        upask=input(ask+"Do you want to update EvilTools?[y/n] > "+green)
-        if upask=="y":
+        upask=input(ask+"Do you want to update EvilTools?[Y/n] > "+green)
+        if upask=="y" or choose == "Y":
             print(nc)
-            system("cd .. && rm -rf evil.py && wget https://raw.githubusercontent.com/lhost25/update/main/evil.py && python3 evil.py")
+            system("sudo rm evil.py && wget https://raw.githubusercontent.com/lhost25/update/main/evil.py && python3 evil.py")
             sprint("\n"+success+"EvilTools updated successfully!! Please restart terminal!\n")
             if (changelog != "404: Not Found"):
                 print(info2+"Changelog:\n"+purple+changelog)
