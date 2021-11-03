@@ -204,8 +204,8 @@ def about():
     print(red+'[ToolName]  '+cyan+' :[EvilTools] ')
     print(red+'[Version]   '+cyan+' :[1.4]')
     print(red+'[Author]    '+cyan+' :[Evil] ')
-    print(red+'[Github]    '+cyan+' :[https://github.com/lhost25] ')
-    print(red+'[Messenger] '+cyan+' :[Evil#2909]')
+    print(red+'[Tele]      '+cyan+' :[@OfficialEvilTools] ')
+    print(red+'[Discord]   '+cyan+' :[Evil#2909]')
     print(red+'[Email]     '+cyan+' :[eviltoolslhost@gmail.com]')
     print()
     print(green+'['+white+'0'+green+']'+yellow+' Exit                     '+     green+'['+white+'99'+green+']'+yellow+'  Main Menu       ')
@@ -409,7 +409,7 @@ def main():
         elif choose == "99":
             about()
         elif choose == "m" or choose == "M":
-            system("xdg-open 'https://github.com/lhost25/lhost25'")
+            system("xdg-open ''")
             main()
         elif choose == "0" or choose == "00":
             exit(0)
