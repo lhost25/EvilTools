@@ -1,7 +1,6 @@
 # Dockerfile
 
-# Author       : Lhost
-# Github       : https://github.com/lhost25
+# Author       : EvilTools
 # Discord       : Evil#2909
 # Email        : eviltoolslhost@gmail.com
 # Date         : 25-08-2021
